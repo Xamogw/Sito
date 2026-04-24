@@ -190,7 +190,54 @@
         object-position: 50% 20%; 
     }
 	
-</style>
+
+    .tree-outer{border:1px solid #333;padding:20px}
+    .tree-cols{display:grid;grid-template-columns:200px 44px 200px 44px 180px;align-items:start}
+    .tree-col-hdr{font-size:17px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .t-mc{background:rgba(0,0,0,.4);border:2px solid #FFD700;padding:12px;cursor:pointer;margin-bottom:10px}
+    .t-mc:hover,.t-mc.sel{background:rgba(255,215,0,.08)} .t-mc.sel{border-color:#fff}
+    .t-mc-img{width:60px!important;height:60px!important;border:1px solid #FFD700!important;object-fit:cover;image-rendering:pixelated;margin-bottom:6px;display:block}
+    .t-mc-nm{font-size:20px;color:#FFD700;text-transform:uppercase;margin-bottom:4px}
+    .t-mc-desc{font-size:16px;color:#908880;line-height:1.3}
+    .t-arr-col{display:flex;flex-direction:column;gap:10px;padding-top:30px}
+    .t-arr{height:90px;display:flex;align-items:center;justify-content:center;font-size:16px}
+    .t-sc{background:rgba(0,0,0,.3);border:1px solid #00CED1;padding:10px;cursor:pointer;margin-bottom:8px}
+    .t-sc:hover,.t-sc.sel{background:rgba(0,206,209,.07)} .t-sc.sel{border-color:#fff}
+    .t-sc-nm{font-size:18px;color:#00CED1;text-transform:uppercase;margin-bottom:3px}
+    .t-sc-desc{font-size:15px;color:#908880;line-height:1.3}
+    .t-spc{background:rgba(0,0,0,.3);border:1px solid #8B0000;padding:8px;margin-bottom:6px}
+    .t-spc-nm{font-size:16px;color:#FF4500;text-transform:uppercase;margin-bottom:2px}
+    .t-spc-desc{font-size:14px;color:#c08080;line-height:1.3} .t-spc.dim{opacity:.35}
+    .tree-leg{display:flex;gap:16px;margin-top:14px;padding-top:10px;border-top:1px solid #333;flex-wrap:wrap}
+    .tree-leg-item{display:flex;align-items:center;gap:6px;font-size:16px;color:#908880}
+    .tree-leg-dot{width:12px;height:12px;flex-shrink:0}
+    .casc-outer{border:1px solid #333;padding:20px}
+    .casc-row1{display:flex;gap:12px}
+    .casc-c1{flex:1;background:rgba(0,0,0,.4);border:2px solid #FFD700;padding:12px;cursor:pointer;text-align:center}
+    .casc-c1:hover,.casc-c1.sel{background:rgba(255,215,0,.08)} .casc-c1.sel{border-color:#fff}
+    .casc-c1-img{width:60px!important;height:60px!important;border:1px solid #FFD700!important;object-fit:cover;image-rendering:pixelated;margin:0 auto 6px;display:block}
+    .casc-c1-nm{font-size:20px;color:#FFD700;text-transform:uppercase;display:block;margin-bottom:4px}
+    .casc-c1-ul{font-size:14px;color:#908880;text-align:left;padding-left:14px;line-height:1.35}
+    .casc-conn{display:flex;gap:12px;height:24px}
+    .casc-conn-cell{flex:1;display:flex;justify-content:center}
+    .casc-conn-line{width:2px;height:24px;background:#FFD700;opacity:.12}
+    .casc-conn-line.active{opacity:.7}
+    .casc-lv2-lbl{font-size:17px;color:#00CED1;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;padding-left:3px}
+    .casc-row2{display:flex;gap:12px}
+    .casc-c2-col{flex:1}
+    .casc-c2{background:rgba(0,0,0,.3);border:1px solid #00CED1;padding:10px;cursor:pointer;margin-bottom:6px}
+    .casc-c2:hover,.casc-c2.sel{background:rgba(0,206,209,.07)} .casc-c2.sel{border-color:#fff}
+    .casc-c2-head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+    .casc-c2-img{width:28px!important;height:28px!important;border:1px solid #00CED1!important;object-fit:cover;image-rendering:pixelated;flex-shrink:0}
+    .casc-c2-nm{font-size:18px;color:#00CED1;text-transform:uppercase}
+    .casc-c2-desc{font-size:14px;color:#908880;line-height:1.3}
+    .casc-conn2{height:16px;display:flex;justify-content:center}
+    .casc-conn2-line{width:2px;height:16px;background:rgba(255,69,0,.5)}
+    .casc-c3{background:rgba(0,0,0,.3);border:1px dashed #8B0000;padding:8px;margin-bottom:5px}
+    .casc-c3-nm{font-size:15px;color:#FF4500;text-transform:uppercase;margin-bottom:2px}
+    .casc-c3-desc{font-size:13px;color:#c08070;line-height:1.3} .casc-c3.dim{opacity:.35}
+
+    </style>
 </head>
 <body>
 
@@ -225,17 +272,17 @@
                     <p>Il mondo vive un respiro ciclico. Quando l'Eclissi avvolge Acheron, le leggi della natura mutano. Le tue abilità saranno l'unico scudo contro l'entropia che minaccia di cancellare l'ultima roccaforte dell'umanità.</p>
                 </div>
                 <div class="main-trade-block">
-                    <h3 style="color: #FFD700;">Progressione senza Retromarcia</h3>
+                    <h3 style="color: #FFD700;">Nessun "tuttofare"</h3>
                     <p>Ogni specializzazione, ogni mestiere, ogni scelta tattica è definitiva. Non esistono scorciatoie: le tue abilità crescono col tempo e con l'esperienza sul campo. Chi sarai quando la luce svanirà?</p>
                 </div>
             </div>
 
             <h3 style="color: #00CED1; border-bottom: 1px solid #00CED1; margin-top: 30px;">Perché unirsi ad Acheron?</h3>
             <ul style="line-height: 1.6;">
-                <li><strong>Cooperazione Necessaria:</strong> Nessuno si salva da solo. Il tuo contributo come Foraggiatore, Artefice, Radiciere o Fregiatore è il pilastro della civiltà.</li>
-                <li><strong>Loot Dinamico:</strong> Un sistema di equipaggiamento profondo, basato su affissi e rarità, che premia l'esplorazione e la strategia.</li>
-                <li><strong>Immersione Totale:</strong> Un'ambientazione dark fantasy coerente, dove il silenzio degli dei e la violenza dell'Eclissi dettano il ritmo di gioco.</li>
-                <li><strong>Interfaccia Modulare:</strong> Un client progettato per darti il controllo tattico totale, permettendoti di adattare la visuale al tuo stile di sopravvivenza.</li>
+                <li><strong>Cooperazione necessaria:</strong> Nessuno si salva da solo. Il tuo contributo come Foraggiatore, Artefice, Radiciere o Fregiatore è il pilastro della civiltà.</li>
+                <li><strong>Loot dinamico:</strong> Un sistema di equipaggiamento profondo, basato su affissi e rarità, che premia l'esplorazione e la strategia.</li>
+                <li><strong>Immersione totale:</strong> Un'ambientazione dark fantasy coerente, dove il silenzio degli dei e la violenza dell'Eclissi dettano il ritmo di gioco.</li>
+                <li><strong>Interfaccia modulare:</strong> Un client progettato per darti il controllo tattico totale, permettendoti di adattare la visuale al tuo stile di sopravvivenza.</li>
             </ul>
 
             <div style="margin-top: 30px; padding: 20px; border: 1px dashed #FFD700; text-align: center;">
@@ -291,9 +338,9 @@
 		</div>
 		</div>
         <div class="main-trade-block">
-            <h3>ECLISSATI</h3>
+            <h3>ECLISSATI - Coloro che hanno visto l'eclissi</h3>
 			<img src="img/razze/eclissati/main.png" alt="umanimain" class="client-screenshot">
-            <p>Il sole è il loro più grande nemico, un velo accecante che li condanna a un'esistenza di cieca impotenza durante le ore di luce. Ma quando l'astro diurno scompare e la tenebra avvolge la pianura, gli Eclissati si risvegliano nella loro vera forma. Dotati di una visione che squarcia il buio più profondo, sono gli unici in grado di scrutare i segreti che la notte protegge. Questa affinità con l'oscurità li rende i più grandi maestri fabbri e cercatori del regno: il ferro sembra cantare sotto il loro tocco, rivelando vene e proprietà che nessun occhio umano potrebbe mai scorgere. Giocare un Eclissato significa accettare una vita di sacrificio diurno, in cambio del dominio assoluto sulle ore in cui il resto del mondo non osa avventurarsi.</p>
+            <p>Gli Eclissati sono umani che non hanno trovato riparo durante l'eclissi. Questo ha trasformato il loro corpo in maniera radicale ed irreversibile. Il sole è il loro più grande nemico, un velo accecante che li condanna a un'esistenza di cieca impotenza durante le ore di luce. Ma quando l'astro diurno scompare e la tenebra avvolge la pianura, gli Eclissati si risvegliano nella loro vera forma. Dotati di una visione che squarcia il buio più profondo, sono gli unici in grado di scrutare i segreti che la notte protegge. Questa affinità con l'oscurità li rende i più grandi maestri fabbri e cercatori del regno: il ferro sembra cantare sotto il loro tocco, rivelando vene e proprietà che nessun occhio umano potrebbe mai scorgere. Giocare un Eclissato significa accettare una vita di sacrificio diurno, in cambio del dominio assoluto sulle ore in cui il resto del mondo non osa avventurarsi.</p>
 		<div class="gallery-container">
     
 		<div class="golden-frame">
@@ -372,121 +419,48 @@
             </div>
         </div>
 
-        <div id="trades" class="content-section">
+         <div id="trades" class="content-section">
             <h2>I Mestieri</h2>
             
             <div class="intro-box">
-                <p>> SISTEMA DI MESTIERI VOTATO ALLA COOPERAZIONE</p>
+                <p>&gt; SISTEMA DI MESTIERI VOTATO ALLA COOPERAZIONE</p>
                 <p>Acheron non perdona i deboli. Qui la sopravvivenza non è un diritto, ma una conquista quotidiana. Per non soccombere all'Eclissi, ognuno ha dovuto votarsi a un'arte: una specializzazione che è al contempo salvezza e condanna.</p>
                 <p>In un mondo che si sgretola, la tua utilità è il tuo unico baluardo; ciò che offrirai alla tua gente sarà il cardine su cui ruoterà il tuo potere. Solo chi si specializza potrà elevare atti quotidiani a risultati che cambiano le sorti del mondo.</p>
-				<p> Tutti possono cercare di sopravvivere ed imparare a difendersi, ma su Acheron potrai fare molto più di questo...
-				<p> <span class="red-bold">ATTENZIONE: Il mestiere che sceglierai alla creazione del personaggio non sarà modificabile!</span></p>
-			</div>
-
-            <div class="main-trade-block">
-                <h3 class="trade-title">RADICIERE</h3>
-                <div class="flex-container">
-                    <img src="img/mestieri/main_radiciere.png" alt="Radiciere">
-                    <ul>
-                       <li>Ara i campi e li coltiva.</li>
-					   <li>Bonifica terreni paludosi per allontanare bestie ostili dagli insediamenti.</li>
-                       <li>Raccoglie cibo di qualità per il proprio insediamento.</li>
-                    </ul>
-                </div>
-                <div class="trade-subtitle">Può specializzarsi come:</div>
-                
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('radiciere-agricoltore')">▶ AGRICOLTORE</div>
-                    <div id="radiciere-agricoltore" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/agricoltore.png" alt="Agricoltore" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
-                </div>
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('radiciere-druido')">▶ DRUIDO</div>
-                    <div id="radiciere-druido" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/druido.png" alt="Druido" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
-                </div>
+                <p>Tutti possono cercare di sopravvivere ed imparare a difendersi, ma su Acheron potrai fare molto di più...</p>
+                <p><strong style="color:#FF4500">&#9888; ATTENZIONE: Il mestiere che sceglierai alla creazione del personaggio non sarà modificabile!</strong></p>
             </div>
-
-            <div class="main-trade-block">
-                <h3 class="trade-title">ARTEFICE</h3>
-                <div class="flex-container">
-                    <img src="img/mestieri/main_artefice.png" alt="Artefice">
-                    <ul>
-                        <li>Costruisce attrezzi di base in legno e metallo.</li>
-						<li>Modifica terreni montuosi e collinari per gestire le risorse del territorio.</li>
-                        <li>Raccoglie pietra e metallo di qualità per il proprio insediamento.</li>
-                    </ul>
+            <div class="casc-outer">
+              <div class="casc-row1">
+                <div class="casc-c1" id="c-radiciere" onclick="cSelM('radiciere')">
+                  <img src="img/mestieri/main_radiciere.png" class="casc-c1-img" alt="">
+                  <span class="casc-c1-nm">Radiciere</span>
+                  <ul class="casc-c1-ul"><li>Ara i campi e li coltiva</li><li>Bonifica terreni paludosi</li><li>Raccoglie cibo di qualità</li></ul>
                 </div>
-                <div class="trade-subtitle">Può specializzarsi come:</div>
-                
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('artefice-ferraio')">▶ FERRAIO</div>
-                    <div id="artefice-ferraio" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/ferraio.png" alt="Ferraio" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
+                <div class="casc-c1" id="c-artefice" onclick="cSelM('artefice')">
+                  <img src="img/mestieri/main_artefice.png" class="casc-c1-img" alt="">
+                  <span class="casc-c1-nm">Artefice</span>
+                  <ul class="casc-c1-ul"><li>Costruisce attrezzi</li><li>Modifica terreni montuosi</li><li>Raccoglie pietra e metallo</li></ul>
                 </div>
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('artefice-carpentiere')">▶ CARPENTIERE</div>
-                    <div id="artefice-carpentiere" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/carpentiere.png" alt="Carpentiere" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
+                <div class="casc-c1" id="c-foraggiatore" onclick="cSelM('foraggiatore')">
+                  <img src="img/mestieri/main_foraggiatore.png" class="casc-c1-img" alt="">
+                  <span class="casc-c1-nm">Foraggiatore</span>
+                  <ul class="casc-c1-ul"><li>Prepara cibi complessi</li><li>Modifica terreni boschivi</li><li>Raccoglie legname</li></ul>
                 </div>
+                <div class="casc-c1" id="c-fregiatore" onclick="cSelM('fregiatore')">
+                  <img src="img/mestieri/main_fregiatore.png" class="casc-c1-img" alt="">
+                  <span class="casc-c1-nm">Fregiatore</span>
+                  <ul class="casc-c1-ul"><li>Negozia con mercanti</li><li>Ripristina insediamenti</li><li>Cuce abiti di prestigio</li></ul>
+                </div>
+              </div>
+              <div class="casc-conn">
+                <div class="casc-conn-cell"><div class="casc-conn-line" id="cl-radiciere"></div></div>
+                <div class="casc-conn-cell"><div class="casc-conn-line" id="cl-artefice"></div></div>
+                <div class="casc-conn-cell"><div class="casc-conn-line" id="cl-foraggiatore"></div></div>
+                <div class="casc-conn-cell"><div class="casc-conn-line" id="cl-fregiatore"></div></div>
+              </div>
+              <div id="casc-lv2"><p style="text-align:center;padding:24px 0;color:#333;font-size:16px;font-style:italic">&#8593; Seleziona un mestiere</p></div>
             </div>
-
-            <div class="main-trade-block">
-                <h3 class="trade-title">FORAGGIATORE</h3>
-                <div class="flex-container">
-                    <img src="img/mestieri/main_foraggiatore.png" alt="Foraggiatore">
-                    <ul>
-                        <li>Prepara cibi complessi che forniscono margini di vantaggio.</li>
-						<li>Modifica terreni boschivi per salvaguardare la propria città.</li>
-                        <li>Raccoglie legname di qualità per il proprio insediamento.</li>
-                    </ul>
-                </div>
-                <div class="trade-subtitle">Può specializzarsi come:</div>
-                
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('foraggiatore-survivalista')">▶ SURVIVALISTA</div>
-                    <div id="foraggiatore-survivalista" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/survivalista.png" alt="Survivalista" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
-                </div>
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('foraggiatore-gastronomo')">▶ GASTRONOMO</div>
-                    <div id="foraggiatore-gastronomo" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/gastronomo.png" alt="Gastronomo" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-trade-block">
-                <h3 class="trade-title">FREGIATORE</h3>
-                <div class="flex-container">
-                    <img src="img/mestieri/main_fregiatore.png" alt="Fregiatore">
-                    <ul>
-                        <li>Ottiene cambi vantaggiosi nelle trattative con i mercanti.</li>
-						<li>Ripristina l'integrità del proprio insediamento.</li>
-                        <li>Cuce abiti che forniscono prestigio* a chi li indossa.</li>
-                    </ul>
-                </div>
-                <div class="trade-subtitle">Può specializzarsi come:</div>
-                
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('fregiatore-cerimoniere')">▶ CERIMONIERE</div>
-                    <div id="fregiatore-cerimoniere" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/cerimoniere.png" alt="Cerimoniere" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
-                </div>
-                <div class="sub-tab">
-                    <div class="sub-tab-header" onclick="toggleContent('fregiatore-appaltatore')">▶ APPALTATORE</div>
-                    <div id="fregiatore-appaltatore" class="sub-tab-content">
-                        <div class="flex-container"><img src="img/appaltatore.png" alt="Appaltatore" style="width:80px; height:80px;"><p>Descrizione sottoclasse...</p></div>
-                    </div>
-                </div>
-            </div>
-       </div>
+        </div>
 
         <div id="mechanics" class="content-section">
             <h2>Meccaniche</h2>
@@ -517,17 +491,434 @@
         </div>
     </div>
 
+    <script type="application/json" id="mestieri-json">
+{
+  "radiciere": {
+    "name": "RADICIERE",
+    "img": "img/mestieri/main_radiciere.png",
+    "bullets": [
+      "Ara i campi e li coltiva.",
+      "Bonifica terreni paludosi per allontanare bestie ostili dagli insediamenti.",
+      "Raccoglie cibo di qualità per il proprio insediamento."
+    ],
+    "subs": [
+      {
+        "id": "radiciere-agricoltore",
+        "name": "AGRICOLTORE",
+        "img": "img/agricoltore.png",
+        "desc": "Maestro della terra coltivata. Massimizza la resa dei campi e gestisce colture rare indispensabili per la comunità.",
+        "specs": [
+          {
+            "name": "SEMINATORE",
+            "desc": "Aumenta la resa delle colture base."
+          },
+          {
+            "name": "ALCHIMISTA DEI CAMPI",
+            "desc": "Produce ingredienti rari per pozioni."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo con la prossima Eclissi.",
+            "dim": true
+          }
+        ]
+      },
+      {
+        "id": "radiciere-druido",
+        "name": "DRUIDO",
+        "img": "img/druido.png",
+        "desc": "Comunica con la natura selvatica. Addestra animali e controlla le bestie delle paludi per proteggere l'insediamento.",
+        "specs": [
+          {
+            "name": "DOMATORE",
+            "desc": "Addomestica creature selvatiche."
+          },
+          {
+            "name": "CUSTODE",
+            "desc": "Protegge zone naturali dall'Eclissi."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo.",
+            "dim": true
+          }
+        ]
+      }
+    ]
+  },
+  "artefice": {
+    "name": "ARTEFICE",
+    "img": "img/mestieri/main_artefice.png",
+    "bullets": [
+      "Costruisce attrezzi di base in legno e metallo.",
+      "Modifica terreni montuosi e collinari per gestire le risorse del territorio.",
+      "Raccoglie pietra e metallo di qualità per il proprio insediamento."
+    ],
+    "subs": [
+      {
+        "id": "artefice-ferraio",
+        "name": "FERRAIO",
+        "img": "img/ferraio.png",
+        "desc": "Forgia armi e armature di qualità superiore usando metalli rari estratti dai giacimenti.",
+        "specs": [
+          {
+            "name": "MAESTRO LAMA",
+            "desc": "Crea armi con affix speciali."
+          },
+          {
+            "name": "CORAZZAIO",
+            "desc": "Forgia armature pesanti con bonus difensivi."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo.",
+            "dim": true
+          }
+        ]
+      },
+      {
+        "id": "artefice-carpentiere",
+        "name": "CARPENTIERE",
+        "img": "img/carpentiere.png",
+        "desc": "Costruisce strutture difensive, trappole e strumenti complessi in legno pregiato.",
+        "specs": [
+          {
+            "name": "INGEGNERE",
+            "desc": "Costruisce macchine da guerra."
+          },
+          {
+            "name": "TRAPPERO",
+            "desc": "Installa trappole nel territorio."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo.",
+            "dim": true
+          }
+        ]
+      }
+    ]
+  },
+  "foraggiatore": {
+    "name": "FORAGGIATORE",
+    "img": "img/mestieri/main_foraggiatore.png",
+    "bullets": [
+      "Prepara cibi complessi che forniscono margini di vantaggio.",
+      "Modifica terreni boschivi per salvaguardare la propria città.",
+      "Raccoglie legname di qualità per il proprio insediamento."
+    ],
+    "subs": [
+      {
+        "id": "foraggiatore-survivalista",
+        "name": "SURVIVALISTA",
+        "img": "img/survivalista.png",
+        "desc": "Sopravvive in condizioni estreme. Traccia percorsi sicuri e gestisce risorse critiche nelle zone più pericolose.",
+        "specs": [
+          {
+            "name": "ESPLORATORE",
+            "desc": "Rivela zone sicure nella nebbia."
+          },
+          {
+            "name": "OMBRA",
+            "desc": "Si muove non rilevato dall'Eclissi."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo.",
+            "dim": true
+          }
+        ]
+      },
+      {
+        "id": "foraggiatore-gastronomo",
+        "name": "GASTRONOMO",
+        "img": "img/gastronomo.png",
+        "desc": "Prepara pasti complessi con effetti permanenti. Le sue ricette cambiano il ritmo di battaglia dell'intero gruppo.",
+        "specs": [
+          {
+            "name": "CUOCO DI GUERRA",
+            "desc": "Buff temporanei da consumo."
+          },
+          {
+            "name": "ALCHIMISTA",
+            "desc": "Trasforma ingredienti in reagenti rari."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo.",
+            "dim": true
+          }
+        ]
+      }
+    ]
+  },
+  "fregiatore": {
+    "name": "FREGIATORE",
+    "img": "img/mestieri/main_fregiatore.png",
+    "bullets": [
+      "Ottiene cambi vantaggiosi nelle trattative con i mercanti.",
+      "Ripristina l'integrità del proprio insediamento.",
+      "Cuce abiti che forniscono prestigio* a chi li indossa."
+    ],
+    "subs": [
+      {
+        "id": "fregiatore-cerimoniere",
+        "name": "CERIMONIERE",
+        "img": "img/cerimoniere.png",
+        "desc": "Gestisce rituali e cerimonie. Aumenta il morale e il prestigio dell'insediamento tramite eventi collettivi.",
+        "specs": [
+          {
+            "name": "ORATORE",
+            "desc": "Skill di persuasione e diplomazia."
+          },
+          {
+            "name": "STORICO",
+            "desc": "Sblocca quest segrete tramite lore."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo.",
+            "dim": true
+          }
+        ]
+      },
+      {
+        "id": "fregiatore-appaltatore",
+        "name": "APPALTATORE",
+        "img": "img/appaltatore.png",
+        "desc": "Gestisce contratti commerciali complessi e monopoli di risorse all'interno dell'insediamento.",
+        "specs": [
+          {
+            "name": "MERCANTE",
+            "desc": "Prezzi speciali coi vendor di Valdris."
+          },
+          {
+            "name": "CONTRABBANDIERE",
+            "desc": "Accesso a beni rari fuori mercato."
+          },
+          {
+            "name": "???",
+            "desc": "In arrivo.",
+            "dim": true
+          }
+        ]
+      }
+    ]
+  }
+}
+    </script>
     <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('nav a').forEach(el => el.classList.remove('active'));
-            document.getElementById(sectionId).classList.add('active');
-            event.target.classList.add('active');
-        }
 
-        function toggleContent(id) {
-            document.getElementById(id).classList.toggle('visible');
+
+    function showSection(id, el) {
+        document.querySelectorAll('.content-section').forEach(function(s){ s.classList.remove('active'); });
+        document.querySelectorAll('nav a').forEach(function(a){ a.classList.remove('active'); });
+        var s = document.getElementById(id); if(s) s.classList.add('active');
+        if(el) el.classList.add('active');
+    }
+    function toggleContent(id) {
+        var el = document.getElementById(id); if(el) el.classList.toggle('visible');
+    }
+
+    var MD = null;
+
+    function getMD() {
+        if(!MD) {
+            var tag = document.getElementById('mestieri-json');
+            if(tag) MD = JSON.parse(tag.textContent);
         }
+        return MD;
+    }
+
+    /* ── helpers ── */
+    function el(tag, cls, txt) {
+        var e = document.createElement(tag);
+        if(cls) e.className = cls;
+        if(txt !== undefined) e.textContent = txt;
+        return e;
+    }
+    function img(src, cls) {
+        var i = document.createElement('img');
+        i.src = src; i.className = cls;
+        i.onerror = function(){ this.style.opacity = '0.15'; };
+        return i;
+    }
+
+    /* ══ OPTION B ══ */
+    var bActive = 'radiciere', bOpenSub = null;
+
+    function bSelectMestiere(id, elem) {
+        bActive = id; bOpenSub = null;
+        document.querySelectorAll('.trades-rail-item').forEach(function(r){ r.classList.remove('active'); });
+        if(elem) elem.classList.add('active');
+        bRender();
+    }
+    function bToggleSub(id) {
+        bOpenSub = (bOpenSub === id) ? null : id;
+        bRender();
+    }
+    function bRender() {
+        var d = document.getElementById('trades-detail-b');
+        if(!d) return;
+        var m = getMD()[bActive];
+        d.innerHTML = '';
+
+        /* header */
+        var hdr = el('div','det-header');
+        hdr.appendChild(img(m.img,'det-img'));
+        var info = el('div');
+        info.appendChild(el('div','det-title',m.name));
+        var desc = el('div','det-desc');
+        var ul = document.createElement('ul');
+        m.bullets.forEach(function(b){ ul.appendChild(el('li','',b)); });
+        desc.appendChild(ul);
+        info.appendChild(desc);
+        hdr.appendChild(info);
+        d.appendChild(hdr);
+
+        /* subtitle */
+        d.appendChild(el('div','det-sublabel','> Può specializzarsi come:'));
+
+        /* accordions */
+        m.subs.forEach(function(sub){
+            var acc = el('div', 'acc' + (bOpenSub===sub.id ? ' open' : ''));
+            var head = el('div','acc-head');
+            head.onclick = function(){ bToggleSub(sub.id); };
+            head.appendChild(el('span','acc-arrow','▶'));
+            head.appendChild(el('span','acc-nm',sub.name));
+            head.appendChild(img(sub.img,'acc-thumb'));
+            acc.appendChild(head);
+
+            var body = el('div','acc-body');
+            if(bOpenSub === sub.id) {
+                body.appendChild(el('div','acc-desc',sub.desc));
+                body.appendChild(el('div','spec-lbl','▸ Percorsi di specializzazione:'));
+                var chips = el('div','spec-chips');
+                sub.specs.forEach(function(sp){
+                    chips.appendChild(el('div','spec-chip'+(sp.dim?' dim':''),sp.name));
+                });
+                body.appendChild(chips);
+                var cards = el('div','spec-cards');
+                sub.specs.filter(function(sp){ return !sp.dim; }).forEach(function(sp){
+                    var card = el('div','spec-card');
+                    card.appendChild(el('div','spec-card-nm',sp.name));
+                    card.appendChild(el('div','spec-card-desc',sp.desc));
+                    cards.appendChild(card);
+                });
+                body.appendChild(cards);
+            }
+            acc.appendChild(body);
+            d.appendChild(acc);
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', function(){
+        if(document.getElementById('trades-detail-b')) bRender();
+    });
+
+    
+    /* ── OPTION A: Skill Tree ── */
+    var aM = 'radiciere', aS = null;
+    function aSelM(id) {
+        aM = id; aS = null;
+        var keys = ['radiciere','artefice','foraggiatore','fregiatore'];
+        keys.forEach(function(k){
+            var e=document.getElementById('a-m-'+k); if(e) e.classList.toggle('sel',k===id);
+        });
+        var a1=document.getElementById('a-arr1');
+        if(a1) {
+            a1.innerHTML='';
+            keys.forEach(function(k){
+                var d=document.createElement('div'); d.className='t-arr';
+                d.style.color=k===id?'#FFD700':'#333';
+                d.textContent=k===id?'▶':'—';
+                a1.appendChild(d);
+            });
+        }
+        var m=getMD()[id];
+        var c2=document.getElementById('a-col2');
+        if(c2){
+            c2.innerHTML='';
+            var lbl=document.createElement('div');
+            lbl.style.cssText='font-size:15px;color:#00CED1;text-transform:uppercase;margin-bottom:6px;letter-spacing:.05em';
+            lbl.textContent='Spec. di '+m.name; c2.appendChild(lbl);
+            m.subs.forEach(function(s){
+                var card=document.createElement('div'); card.className='t-sc'; card.id='a-s-'+s.id;
+                card.onclick=function(){ aSelS(s.id); };
+                var nm=document.createElement('div'); nm.className='t-sc-nm'; nm.textContent=s.name; card.appendChild(nm);
+                var ds=document.createElement('div'); ds.className='t-sc-desc'; ds.textContent=s.desc.split('.')[0]+'.'; card.appendChild(ds);
+                c2.appendChild(card);
+            });
+        }
+        var c3=document.getElementById('a-col3'); if(c3) c3.innerHTML='<p style="color:#333;font-size:15px;padding:8px;font-style:italic">&larr; Seleziona una sottoclasse</p>';
+        var a2=document.getElementById('a-arr2'); if(a2){a2.innerHTML='';m.subs.forEach(function(){var d=document.createElement('div');d.className='t-arr';d.style.color='#333';d.textContent='—';a2.appendChild(d);});}
+    }
+    function aSelS(id) {
+        aS=id;
+        var m=getMD()[aM]; var sub=null; m.subs.forEach(function(s){if(s.id===id)sub=s;});
+        if(!sub)return;
+        m.subs.forEach(function(s){var e=document.getElementById('a-s-'+s.id);if(e)e.classList.toggle('sel',s.id===id);});
+        var a2=document.getElementById('a-arr2');
+        if(a2){a2.innerHTML='';m.subs.forEach(function(s){var d=document.createElement('div');d.className='t-arr';d.style.color=s.id===id?'#00CED1':'#333';d.textContent=s.id===id?'▶':'—';a2.appendChild(d);});}
+        var c3=document.getElementById('a-col3');
+        if(c3){
+            c3.innerHTML='';
+            var lbl=document.createElement('div'); lbl.style.cssText='font-size:15px;color:#FF4500;text-transform:uppercase;margin-bottom:6px'; lbl.textContent='Percorsi di '+sub.name; c3.appendChild(lbl);
+            sub.specs.forEach(function(sp){
+                var card=document.createElement('div'); card.className='t-spc'+(sp.dim?' dim':'');
+                var nm=document.createElement('div'); nm.className='t-spc-nm'; nm.textContent=sp.name; card.appendChild(nm);
+                var ds=document.createElement('div'); ds.className='t-spc-desc'; ds.textContent=sp.desc; card.appendChild(ds);
+                c3.appendChild(card);
+            });
+        }
+    }
+
+    /* ── OPTION C: Cascade ── */
+    var cM=null, cS={};
+    function cSelM(id){
+        cM=(cM===id)?null:id; cS={};
+        ['radiciere','artefice','foraggiatore','fregiatore'].forEach(function(k){
+            var e=document.getElementById('c-'+k); if(e)e.classList.toggle('sel',k===cM);
+            var l=document.getElementById('cl-'+k); if(l)l.classList.toggle('active',k===cM);
+        });
+        cRenderL2();
+    }
+    function cSelS(mid,sid){ cS[mid]=(cS[mid]===sid)?null:sid; cRenderL2(); }
+    function cRenderL2(){
+        var l2=document.getElementById('casc-lv2'); if(!l2)return;
+        if(!cM){l2.innerHTML='<p style="text-align:center;padding:24px 0;color:#333;font-size:16px;font-style:italic">&#8593; Seleziona un mestiere</p>';return;}
+        var m=getMD()[cM]; var os=cS[cM];
+        l2.innerHTML='';
+        var lbl=document.createElement('div'); lbl.className='casc-lv2-lbl'; lbl.textContent='▸ Specializzazioni di '+m.name; l2.appendChild(lbl);
+        var row=document.createElement('div'); row.className='casc-row2';
+        m.subs.forEach(function(sub){
+            var col=document.createElement('div'); col.className='casc-c2-col';
+            var card=document.createElement('div'); card.className='casc-c2'+(os===sub.id?' sel':'');
+            card.onclick=function(){cSelS(cM,sub.id);};
+            var head=document.createElement('div'); head.className='casc-c2-head';
+            var i=document.createElement('img'); i.src=sub.img; i.className='casc-c2-img'; i.onerror=function(){this.style.display='none';}; head.appendChild(i);
+            var nm=document.createElement('div'); nm.className='casc-c2-nm'; nm.textContent=sub.name; head.appendChild(nm);
+            card.appendChild(head);
+            var ds=document.createElement('div'); ds.className='casc-c2-desc'; ds.textContent=sub.desc; card.appendChild(ds);
+            col.appendChild(card);
+            if(os===sub.id){
+                var cn=document.createElement('div'); cn.className='casc-conn2'; var cl=document.createElement('div'); cl.className='casc-conn2-line'; cn.appendChild(cl); col.appendChild(cn);
+                sub.specs.forEach(function(sp){
+                    var sc=document.createElement('div'); sc.className='casc-c3'+(sp.dim?' dim':'');
+                    var sn=document.createElement('div'); sn.className='casc-c3-nm'; sn.textContent=sp.name; sc.appendChild(sn);
+                    var sd=document.createElement('div'); sd.className='casc-c3-desc'; sd.textContent=sp.desc; sc.appendChild(sd);
+                    col.appendChild(sc);
+                });
+            }
+            row.appendChild(col);
+        });
+        l2.appendChild(row);
+    }
+
+    window.addEventListener('DOMContentLoaded', function(){
+        if(document.getElementById('a-col2')) aSelM('radiciere');
+    });
+
     </script>
 </body>
 </html>
